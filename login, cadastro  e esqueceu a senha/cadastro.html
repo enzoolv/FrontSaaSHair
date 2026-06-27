@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="cadastro.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+    <div class="bg"></div>
+    <main class="page">
+
+    <section class="esq">
+        <span class="tag">Seja Bem-vindo</span>
+        <h1>Crie sua<br><em>conta agora.</em></h1>
+        <p>Acesse todos os seus recursos e configurações em um só lugar.</p>
+    </section>
+        <section class="login">
+            <div class="bg-dir"></div>
+            <form>
+                <a href="login.html" class="back-link">
+                <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path d="M19 12H5M12 5l-7 7 7 7"/></svg>
+                Voltar
+                </a>
+                <h1>Cadastrar</h1>
+                <div class="inputs">
+                    
+                    <label for="username">Insira seu nome:</label>
+                    <input id="username" name="username" type="text" placeholder="username" required>
+                    
+                    <label for="email">E-mail</label>
+                    <input id="email" name="email" type="email" placeholder="SeuEmail@gmail.com" required>
+
+                    <label for="tel">telefone</label>
+                    <input id="tel" name="tel" type="text" placeholder="tel:" required>
+                    
+                    <label for="senha">Senha</label>
+                    <input id="senha" name="senha" type="password" placeholder="••••••••" required>
+                    
+                    <label for="confirmar-senha">Confirmar senha</label>
+                    <input id="confirmar-senha" name="confirmar-senha" type="password" placeholder="••••••••" required>
+
+                </div>
+                <button type="submit">Entrar</button>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
