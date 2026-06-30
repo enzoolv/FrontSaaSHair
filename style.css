@@ -360,6 +360,9 @@ body{
 }
 
 /* parte dos Serviços  */
+.services{
+    margin-top: 80px;
+}
 .services-grid{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -394,6 +397,9 @@ body{
 }
 
 /* parte dos Profissionais  */
+.team {
+    margin-top: 40px
+}
 .team-grid{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
