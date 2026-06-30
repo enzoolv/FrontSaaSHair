@@ -3,115 +3,173 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>Inicio</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="bg"></div>
-    <!-- Nav bar -->
-    <nav class="nav-bar">
-        <img id="logo" src="assets/Img/logo.png" alt="logo">
-        <ul>
-            <div class="menu">
+    <div class="container">
+        <!--ISSO AQUI É A NAV BAR -> AQUELA QUE FICA NO LADO-->
+            <nav class="sidebar">
+                <img id="logo" src="assets/Img/logo.png" alt="Logo">
+                <ul>
+                    <div class="sidebar-menu">
+                        <li><a href="index.html" class="active"><i class="fa-solid fa-house"></i> Inicio</a></li>
+                        <li><a href="./pages/nav/agendamentos.html"><i class="fa-regular fa-calendar"></i> Agendamentos</a></li>
+                        <li><a href="./pages/nav/serviços.html"><i class="fa-solid fa-briefcase"></i> serviços</a></li>
+                        <li><a href="./pages/nav/profissionais.html"><i class="fa-solid fa-users"></i> Profissionais</a></li>
+                        <li><a href="./pages/nav/clientes.html"><i class="fa-solid fa-user"></i> Clientes</a></li>
+                        <li><a href="./pages/nav/financeira.html"><i class="fa-solid fa-dollar-sign"></i> Financeiro</a></li>
+                        <li><a href="./pages/nav/estoque.html"><i class="fa-solid fa-box"></i> Estoque</a></li>
+                        <li><a href="pages/planos/planos.html"><i class="fa-solid fa-layer-group"></i>Planos</a></li>
+                        <li><a href="#" class="link-notif"><i class="fa-solid fa-bell"></i> Notificações
+                        <li><a href="#"><i class="fa-solid fa-gear"></i> Configurações</a></li>
+                    </div>
+                    <!-- PRECISA MEXER COM O BACK END-->
+                    <li id="user">
+                        <img src="assets/Img/user.jpg" alt="" class="user-avatar">
+                        <div class="user-info">
+                            <strong>Lorem</strong>
+                            <span>Ver perfil</span>
+                        </div>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </li>
+                </ul>
+            </nav>
+        <!--HEADER ALI EMCIMA-->
+        <div class="right">
+            <header>
+                <div class="hero-content">
+                    <!-- PRECISA MEXER COM O BACK END-->
+                    <div class="header-left">
+                        <h1>Olá, Lorem </h1>
+                        <p>Seja bem-vinda de volta ao Belleza Studio.</p>
+                    </div>
+                    <div class="header-right">
+                        <i class="fa-solid fa-bell"></i>
 
-                <li><a href="index.html"><i class="fa-solid fa-house"></i> Home</a></li>
-                <li><a href="./pages/nav/agendamentos.html"><i class="fa-regular fa-calendar"></i> Agendamentos</a></li>
-                <li><a href="./pages/nav/serviços.html"><i class="fa-solid fa-briefcase"></i> Serviços</a></li>
-                <li><a href="./pages/nav/profissionais.html"><i class="fa-solid fa-users"></i> Profissionais</a></li>
-                <li><a href="./pages/nav/clientes.html"><i class="fa-solid fa-user"></i>Clientes</a></li>
-                <li><a href="./pages/nav/estoque.html"><i class="fa-solid fa-box"></i> Estoque</a></li>
-                <li><a href="./pages/nav/financeira.html"><i class="fa-solid fa-dollar-sign"></i>Financeiro</a></li>
-                <li><a href="#"><i class="fa-solid fa-bell"></i> Notificações</a></li>
-                <li><a href="#"><i class="fa-solid fa-gear"></i> Configurações</a></li>
+                        <a id="btn-schedule" href="">
+                            <button>
+                                <i class="fa-regular fa-calendar"></i>
+                                Agendar agora
+                            </button>
+                        </a>
+                    </div>
+                </div>
+            </header>
+            <!-- Agendamentos -->
+             <div class="arrumar">
+                <section class="appointments">
+                    <div class="appointments-header">
+                        <h2>Próximo agendamento</h2>
+                        <a href="">Ver todos</a>
+                    </div>
+                    <div class="appointment-card">
+                        <div class="appointment-icon">
+                            <i class="fa-regular fa-calendar"></i>
+                        </div>
+                        <!-- PRECISA MEXER COM O BACK END-->
+                        <div class="appointment-info">
+                            <h3>Lorem ipsum dolor</h3>
+                            <p>Lorem ipsum dolor</p>
+                            <p>Lorem ipsum dolor</p>
+                        </div>
+                        <div class="appointment-actions">
+                            <button id="btn-confirm">Confirmado</button>
+                            <button id="btn-details">Ver detalhes</button>
+                        </div>
+                    </div>
+                </section>
+                <!--açoes rapidas-->
+                <section class="quick-actions">
+                    <h2>Ações rápidas</h2>
+                    <div class="quick-actions-list">
+                        <a href="#"><i class="fa-regular fa-calendar"></i> Agendar</a>
+                        <a href="pages/nav/agendamentos.html"><i class="fa-regular fa-calendar"></i> agendamentos</a>
+                        <a href="pages/nav/estoque.html"><i class="fa-solid fa-box"></i> Estoque</a>
+                    </div>
+
+                </section>
             </div>
-              <li id="user"><i class="fa-solid fa-circle-user"></i></li>
-        </ul>
-    </nav>
-
-    <!-- Header do SaaS -->
-    <header>
-        <div class="escrita">
-            <h1>OLÁ, 💜</h1> <!-- Colocar nome do usuário -->
-            <p>Seja bem-vinda de volta ao Belleza Studio</p> <!-- Colocar o nome do aluguel -->
-            <i class="fa-solid fa-bell"></i>
-            <a id="bnt-agendar" href="">
-                <button><i class="fa-regular fa-calendar"></i> Agendar agora</button>
-            </a>
+            <section class="services">
+                <div class="section-header">
+                    <h2>Serviços que você pode amar</h2>
+                    <a href="#">Ver todos</a>
+                </div>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <img src="assets/Img/luzes.jpeg" alt="Luzes">
+                        <h3>Luzes</h3>
+                        <p>A partir de</p>
+                        <p class="price">R$ 250,00</p>
+                    </div>
+                    <div class="service-card">
+                        <img src="assets/Img/escova.jpeg" alt="Escova">
+                        <h3>Escova</h3>
+                        <p>A partir de</p>
+                        <p class="price">R$ 90,00</p>
+                    </div>
+                    <div class="service-card">
+                        <img src="assets/Img/penteado.jpeg" alt="Penteado">
+                        <h3>Penteado</h3>
+                        <p>A partir de</p>
+                        <p class="price">R$ 120,00</p>
+                    </div>
+                    <div class="service-card">
+                        <img src="assets/Img/corte.jpeg" alt="Corte feminino">
+                        <h3>Corte Feminino</h3>
+                        <p>A partir de</p>
+                        <p class="price">R$ 70,00</p>
+                    </div>
+                </div>
+            </section>
+            <section class="team">
+                <div class="section-header">
+                    <h2>Nossas profissionais</h2>
+                    <a href="#">Ver todas</a>
+                </div>
+                <div class="team-grid">
+                    <!-- PRECISA MEXER COM O BACK END-->
+                    <div class="team-card">
+                        <img src="#" alt="Lorem ipsum">
+                        <div class="team-info">
+                            <h3>Lorem ipsum</h3>
+                            <p>Lorem ipsum</p>
+                            <span class="rating"><i class="fa-solid fa-star"></i> Lorem ipsum</span>
+                        </div>
+                    </div>
+                    <div class="team-card">
+                        <img src="#" alt="Lorem ipsum">
+                        <div class="team-info">
+                            <h3>Lorem ipsum</h3>
+                            <p>Lorem ipsum</p>
+                            <span class="rating"><i class="fa-solid fa-star"></i>Lorem ipsum</span>
+                        </div>
+                    </div>
+                    <div class="team-card">
+                        <img src="#" alt="Lorem ipsum">
+                        <div class="team-info">
+                            <h3>Lorem ipsum</h3>
+                            <p>Lorem ipsum</p>
+                            <span class="rating"><i class="fa-solid fa-star"></i>Lorem ipsum</span>
+                        </div>
+                    </div>
+                    <div class="team-card">
+                        <img src="#" alt="Lorem ipsum">
+                        <div class="team-info">
+                            <h3>Lorem ipsum</h3>
+                            <p>Lorem ipsum</p>
+                            <span class="rating"><i class="fa-solid fa-star"></i>Lorem ipsum</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <footer class="site-footer">
+                <p>Belleza Studio &copy; 2024<br><span>Todos os direitos reservados.</span></p>
+            </footer>
         </div>
-    </header>
-
-    <!-- Agendamentos -->
-    <section class="agendamentos">
-        <div class="esc-agenda">
-            <h2>Próximo agendamento</h2>
-            <a href="">Ver todos</a>
-        </div>
-        <!-- Falta colocar a imagem e os agendamentos -->
-        <button id="bnt-confirmar">Confirmado</button>
-        <button id="bnt-detalhes">Detalhes</button>
-    </section>
-
-    <!-- Ações rápidas -->
-    <section class="rapidas">
-        <h2>Ações rápidas</h2>
-        <div class="icones">
-            <a href="#"><i class="fa-regular fa-calendar"></i> Agendar</a>
-            <a href="#"><i class="fa-regular fa-calendar"></i> Meus agendamentos</a>
-            <a href="#"><i class="fa-solid fa-box"></i> Estoque</a>
-        </div>
-    </section>
-
-    <!-- Serviços -->
-    <section class="serviços">
-        <div class="text-serv">
-            <h2>Serviços que fazemos</h2>
-            <a href="#">Ver todos</a>
-        </div>
-        <div class="cards">
-            <div class="card">
-                <img src="" alt="">
-                <h3>Luzes</h3>
-                <p>A partir de</p>
-                <p>R$</p>
-            </div>
-            <div class="card">
-                <img src="" alt="">
-                <h3>Escova</h3>
-                <p>A partir de</p>
-                <p>R$</p>
-            </div>
-            <div class="card">
-                <img src="" alt="">
-                <h3>Penteado</h3>
-                <p>A partir de</p>
-                <p>R$</p>
-            </div>
-            <div class="card">
-                <img src="" alt="">
-                <h3>Corte feminino</h3>
-                <p>A partir de</p>
-                <p>R$</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Profissionais -->
-    <section class="profissionais">
-        <div class="text-prof">
-            <h2>Nossas profissionais</h2>
-            <a href="#">Ver todas</a>
-        </div>
-        <div class="fotos-prof">
-            <img src="#" alt="">
-            <img src="#" alt="">
-            <img src="#" alt="">
-            <img src="#" alt="">
-        </div>
-    </section>
-
-    <footer>
-    </footer>
-
+    </div>
 </body>
 </html>
